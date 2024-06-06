@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import FileList from './app/FileList';
+import FileList from './app/FilesList';
 import { Navbar, Container } from 'react-bootstrap';
 
 function App() {
