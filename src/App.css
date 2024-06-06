@@ -1,3 +1,4 @@
+/* src/App.css */
 .App {
   text-align: center;
 }
@@ -33,4 +34,28 @@
 
 .container {
   padding-top: 2rem;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.navbar .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navbar .nav-link .text-light {
+  font-size: 1.5rem;
+}
+
+.navbar .ml-auto {
+  margin-left: auto !important;
 }
