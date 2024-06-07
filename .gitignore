@@ -9,7 +9,12 @@
 /coverage
 
 # production
-/build
+/src
+
+/public
+
+package.json
+*.md
 
 
 package-lock.json
