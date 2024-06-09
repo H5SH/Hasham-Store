@@ -1,24 +1,31 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 
-// Logos
-import pongLogo from './logos/pongLogo.png'
-import childCareLogo from './logos/trachealLogo.jpg'
-
-// Files
-import chatting from './files/chatting-electron.exe'
-import pong from './files/pong.love'
-import childCare from './files/childrenCare.apk'
+// import { saveAs } from 'file-saver';
 
 
 const files = [
-  { name: 'Chatting', size: '100.97 MB', type: '.exe', details: 'A Next.js Application Converted to Desktop Application using Electron', url: chatting, logo: 'https://cdn.worldvectorlogo.com/logos/electron-4.svg' },
-  { name: 'ChildrenCare', size: '723 MB', type: '.apk', details: 'Android App created in React Native, A guide on tracheostomy care in children', url: childCare, logo: childCareLogo },
-  { name: 'Pong', size: '71 MB', type: '.love', details: 'My touch on Pong a game 1972, created in lua and love2d the game consist of both single player and multiplayer game play', url: pong, logo: pongLogo },
+  { name: 'Chatting', size: '100.97 MB', type: '.exe', details: 'A Next.js Application Converted to Desktop Application using Electron', url: 'https://github.com/H5SH/Hasham-projects/tree/main/src/app/files/chatting-electron.exe', logo: 'https://cdn.worldvectorlogo.com/logos/electron-4.svg' },
+  { name: 'ChildrenCare', size: '723 MB', type: '.apk', details: 'Android App created in React Native, A guide on tracheostomy care in children', url: 'https://github.com/H5SH/Hasham-projects/tree/main/src/app/files/childrenCare.apk', logo: 'logos/trachealLogo.jpg' },
+  { name: 'Pong', size: '71 KB', type: '.love', details: 'My touch on Pong a game 1972, created in lua and love2d the game consist of both single player and multiplayer game play', url: 'files/pong.love', logo: 'logos/pongLogo.png' },
   // {name: 'MovieBrowser', size: 'NA', type: '.apk', details: 'Work Under Progress', url: '', logo: 'https://t4.ftcdn.net/jpg/05/00/61/19/360_F_500611919_5wuf1qGRCubiXXxIa7og1fLLCyHi6qP9.jpg'},
-  // {name: 'Flappy', size: 'NA', type: '.love', details: 'My take a on flappy bird, the game awards you with madels on different milestones and contains random geration of levels, created in love2d', url: '', logo: 'https://www.wired.com/images_blogs/gamelife/2014/02/title.jpg'}
+  {name: 'Flappy', size: '13 MB', type: '.love', details: 'My take a on flappy bird, the game awards you with madels on different milestones and contains random geration of levels, created in love2d', url: 'files/flappy.love', logo: 'https://www.wired.com/images_blogs/gamelife/2014/02/title.jpg'}
   // Add more files as needed
 ];
+
+
+// async function handleDownload(filePath){
+//   try{
+//     const response = await fetch(filePath)
+//     if(response.ok){
+//       const fileInfo = await response.json()
+//       const fileContent = atob(fileInfo.content)
+//       saveAs(fileContent)
+//     }
+//   }catch(err){
+//     console.log(err)
+//   }
+// }
 
 const FileList = () => {
   return (
