@@ -11,7 +11,10 @@ function App() {
         <Container>
           <Navbar.Brand href="#home">Hasham Asad Store</Navbar.Brand>
           <div className="header-info ml-auto">
-            <span style={{fontStyle: 'italic'}} className="text-white font-weight-light font-italic">Click any card to download the file</span>
+            <p style={{fontStyle: 'italic'}} className="text-white font-weight-light font-italic">
+              Click any card to download the file <br />
+              (files bigger then 100mb must be downloaded from github)
+              </p>
           </div>
           <Nav className="ml-auto">
             <Nav.Link href="https://www.linkedin.com/in/hasham-asad-44ab9926a/" target="_blank">
