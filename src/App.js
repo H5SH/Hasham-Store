@@ -9,7 +9,7 @@ function App() {
     <div className="App d-flex flex-column min-vh-100">
       <Navbar bg="dark" variant="dark" className="mb-3">
         <Container>
-          <Navbar.Brand href="#home">Hasham Asad Projects Files</Navbar.Brand>
+          <Navbar.Brand href="#home">Hasham Asad Store</Navbar.Brand>
           <div className="header-info ml-auto">
             <span style={{fontStyle: 'italic'}} className="text-white font-weight-light font-italic">Click any card to download the file</span>
           </div>
